@@ -84,3 +84,7 @@ function soundControl(status,w_sound){
         music.currentTime = 0;
     }
 }
+
+function goBack(){
+    window.history.back();
+}
