@@ -66,6 +66,4 @@ btn1.addEventListener("click",
     },false
 );  
 
-function goBack(){
-    window.history.back;
-}
+
