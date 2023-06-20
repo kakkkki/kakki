@@ -79,10 +79,12 @@ p{
 
 header{
     margin-top: 8px;
-    color: rgba(253, 4, 420, 0.5);
+    color: #ff6347;
     font-size: 38px;
     font-weight: bold;
     text-align: center;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.65),
+                 -0.5px -0.5px 0.5px rgba(0, 0, 0, 0.65);
 }
 
 .wrapper{
@@ -102,11 +104,12 @@ header{
     height: 250px;
     line-height: 250px;
     border-radius: 50%;
-    color: rgb(255,0,212);
+    color: #ff6347;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.65);
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.65),
+                 -0.5px -0.5px 0.5px rgba(0, 0, 0, 0.65);
     background: linear-gradient(#6795fd 0%,#afeeee 100%);
     box-shadow: 0 10px 0 grey;
     justify-content: center;
@@ -155,27 +158,50 @@ footer{
     background: rgba(1, 24, 31, 0.7);
 }
 
-@media screen and (max-width;480px) {
+@media screen and (max-width:480px) {
     header{
-        margin-top: 20px;
-        font-size: 30px;
+        margin-top: 150px;
+        font-size: 20px;
+    }
+
+    body{
+        margin: 0;
+        line-height: normal; 
+        font-family: "Helvetica Neue",
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
+        background: rgb(212, 14, 14);
+        background-image: url(img/wudang.gif);
+        background-position: 50% 0%;
+        background-size: cover;
     }
     
     #btn1{
-        position: relative;
+        width: 200px;
+        height: 200px;
+        font-size: 15px;
+        align-items: center;
+        display: flex;
+    }
+
+    h1{
+        position: fixed;
         margin: 20px auto;
-        width: 150px;
-        height: 280px;
-        border-radius: 50%;
-        color: rgb(255,0,212);
-        font-weight: bold;
-        font-size: 20px;
-        text-align: center;
-        text-shadow: 1px 1px 1px rgba(255,255,255,0.65);
-        background: linear-gradient(#6795fd 0%,#afeeee 100%);
-        box-shadow: 0 10px 0 grey;
-        justify-content: center;
+        top: -10px;
+        left: 2px;
+        font-size: 5px;
+    }
+    
+    .back-button{
+        position: fixed;
+        margin: 20px auto;
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        left: 45px;
         cursor: pointer;
-        user-select: none;
     }
 }
