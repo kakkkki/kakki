@@ -38,9 +38,9 @@ btn1.addEventListener("click",
         if(soundEndflag === "1"){
         soundControl("end","");
         }
-        let resultText = ["歌！","ダンス！","RAP！","バスケ！！！"];
+        let resultText = ["歌！","ダンス！","RAP！","バスケ！"];
         let resultColor = ["#FF0000","#FFF001","#261e1c","#FF0000"];
-        let resultFontSize = ["50px","50px","50px","100px"];
+        let resultFontSize = ["50px","50px","50px","70px"];
         let resultMaxspeed = [10,10,10,10];
         let resultMaxSize = [30,30,30,30];
         let resultSound = ["sound/ji.mp3","sound/ji.mp3","sound/ji.mp3","sound/ganma.mp3"];
